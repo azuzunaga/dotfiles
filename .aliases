@@ -54,7 +54,7 @@ function rml () {
 
 
 #### git variables ####
-local gs_message="\n\033[0;34m╭───────────────── git status ─────────────────╮\033[0m\n"
+gs_message="\n\033[0;34m╭───────────────── git status ─────────────────╮\033[0m\n"
 
 #### git shortcuts ####
 alias gpom="git push origin master"
