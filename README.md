@@ -2,7 +2,7 @@
 \*Kinda. All manual for now.
 
 ## First things first - Getting the terminal set-up
-
+![End result](https://github.com/azuzunaga/dotfiles/blob/master/images/end_result.gif)
 
 
 ## Changing mac settings
