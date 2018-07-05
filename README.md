@@ -57,6 +57,13 @@ Note: All code blocks should be run on the terminal.
 9. Fork and clone this repo (`https://github.com/azuzunaga/dotfiles`).
   * Optional, but recommended: Create a `~/Programming` directory and place the `dotfiles` repo there, so that the end path of the repo is `~/Programming/dotfiles`. This guide assumes this structure, but feel free to change the commands to match your actual `dotfiles` path.
 
+#### Other downloads
+* imgcat:
+  ```bash
+  brew tap eddieantonio/eddieantonio
+  brew install imgcat
+  ```
+
 ### Setting up the configuration files
 The dotfiles repo has all the files necessary to get you up and running. There are two options to get the files where they need to be: copy or symlink.
 
