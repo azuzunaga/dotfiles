@@ -81,7 +81,7 @@ Run the following commands to symlink the files to the correct places:
 
 Dotfiles to source directory:
 ```bash
-ln -sf ~/Programming/dotfiles/.*[^.git] ~/Programming/test
+ln -sf ~/Programming/dotfiles/.*[^.git] ~
 ```
 
 Plist file to preferences folder:
