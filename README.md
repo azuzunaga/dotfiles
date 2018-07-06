@@ -21,10 +21,13 @@ Note: All code blocks should be run on the terminal.
 
 2. Install `zsh`
   ```bash
-  brew install zsh
+  brew install zsh zsh-completions
   ```
 
-3. Install iterm2 by downloading it from this link: https://iterm2.com/downloads.html
+3. Install iterm2:
+  ```bash
+   brew cask install iterm2
+   ```
 
 4. Install `oh-my-zsh`:
 
@@ -54,6 +57,18 @@ Note: All code blocks should be run on the terminal.
   ```bash
   brew install coreutils
   ```
+
+9. Install `zsh-autosuggestions`
+
+  ```bash
+  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+  ```
+
+10. Install prompt syntax highlighting
+  ```bash
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+  ```
+
 9. Fork and clone this repo (`https://github.com/azuzunaga/dotfiles`).
   * Optional, but recommended: Create a `~/Programming` directory and place the `dotfiles` repo there, so that the end path of the repo is `~/Programming/dotfiles`. This guide assumes this structure, but feel free to change the commands to match your actual `dotfiles` path.
 
@@ -84,7 +99,7 @@ Dotfiles to source directory:
 ln -sf ~/Programming/dotfiles/.*[^.git] ~
 ```
 
-Plist file to preferences folder:
+iterm2 plist file to preferences folder:
 ```bash
 ln -sf ~/Programming/dotfiles/com.googlecode.iterm2.plist ~/Library/Preferences/
 ```
