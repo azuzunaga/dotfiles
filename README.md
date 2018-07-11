@@ -79,6 +79,11 @@ Note: All code blocks should be run on the terminal.
   brew install imgcat
   ```
 
+* tree
+  ```bash
+  brew install tree
+  ```
+
 ### Setting up the configuration files
 The dotfiles repo has all the files necessary to get you up and running. There are two options to get the files where they need to be: copy or symlink.
 
@@ -97,6 +102,7 @@ Run the following commands to symlink the files to the correct places:
 Dotfiles to source directory:
 ```bash
 ln -sf ~/Programming/dotfiles/.*[^.git] ~
+ln -sf ~/Programming/dotfiles/.gitconfig ~
 ```
 
 iterm2 plist file to preferences folder:
