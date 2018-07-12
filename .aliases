@@ -19,6 +19,9 @@ alias ll='ls -AFHls --si'
 alias ldir="ls -dl .*/ */"
 alias clear_history='echo "" > ~/.zsh_history & exec $SHELL -l'
 alias sor="source ~/.zshrc"
+alias snx="spotify next"
+alias spv="spotify prev"
+alias spp="spotify pause"
 # Make LESS display file contents inline if page size is only one screen
 alias less="/usr/local/bin/smartless"
 
