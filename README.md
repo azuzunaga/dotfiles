@@ -83,6 +83,10 @@ Note: All code blocks should be run on the terminal.
   ```bash
   brew install tree
   ```
+* tldr
+  ```bash
+  brew install tldr
+  ```
 
 ### Setting up the configuration files
 The dotfiles repo has all the files necessary to get you up and running. There are two options to get the files where they need to be: copy or symlink.
