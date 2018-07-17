@@ -33,3 +33,4 @@ export NVM_DIR="$HOME/.nvm"
 
 # load any local configuration
 [[ -f "$HOME/.bashrc.local" ]] && source "$HOME/.bashrc.local"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
