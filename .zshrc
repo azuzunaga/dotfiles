@@ -7,6 +7,7 @@ export PATH=$HOME/bin:/usr/local/opt:$PATH
 # look for commands in these places
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 export TERM="xterm-256color"
+export PAGER=smartless
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/$USER/.oh-my-zsh
