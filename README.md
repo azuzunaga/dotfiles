@@ -88,6 +88,14 @@ Note: All code blocks should be run on the terminal.
   brew install tldr
   ```
 
+* cheat.sh
+  ```bash
+  brew install rlwrap
+  mkdir ~/bin #if you don't already have a bin dir in your source dir
+  curl https://cht.sh/:cht.sh > ~/bin/cht.sh
+  chmod +x ~/bin/cht.sh
+  ```
+
 ### Setting up the configuration files
 The dotfiles repo has all the files necessary to get you up and running. There are two options to get the files where they need to be: copy or symlink.
 
