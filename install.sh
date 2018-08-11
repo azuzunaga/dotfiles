@@ -1,4 +1,4 @@
-#!/usr/bin/env bashs
+#!/usr/bin/env bash
 
 # Get the current dotfiles and copy them to a back-up folder
 install_dir=`pwd`
