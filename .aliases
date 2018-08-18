@@ -4,7 +4,7 @@
 
 ali=/Users/az/.aliases
 alias sl="ls"
-alias ls='/usr/local/bin/gls --color --group-directories-first'
+alias ls='colorls --sd'
 alias irb="pry"
 alias be="bundle exec"
 alias cat="ccat -G Decimal="darkteal"  -G Plaintext="darkgreen""
@@ -15,7 +15,7 @@ alias dirs="dirs -v"
 alias atom="atom ."
 alias ali="nano $ali"
 alias hist="history"
-alias ll='ls -AFHls --si'
+alias ll='ls -Al'
 alias ldir="ls -dl .*/ */"
 alias clear_history='echo "" > ~/.zsh_history & exec $SHELL -l'
 alias sor="source ~/.zshrc"

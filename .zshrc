@@ -54,5 +54,8 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 source $HOME/.aliases
 
-#iterm2 integration
+# iterm2 integration
 source ~/.iterm2_shell_integration.zsh
+
+# colorls tab completion
+source $(dirname $(gem which colorls))/tab_complete.sh
