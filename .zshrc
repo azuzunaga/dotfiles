@@ -57,8 +57,5 @@ source $HOME/.aliases
 # iterm2 integration
 source ~/.iterm2_shell_integration.zsh
 
-# colorls tab completion
-source $(dirname $(gem which colorls))/tab_complete.sh
-
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
