@@ -54,6 +54,9 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 source $HOME/.aliases
 
+# Functions
+source $HOME/.functions
+
 # iterm2 integration
 source ~/.iterm2_shell_integration.zsh
 
