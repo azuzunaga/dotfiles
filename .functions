@@ -1,6 +1,83 @@
+# ----------------------
+# Bash Functions
+# ----------------------
+
+# Create a directory and cd into it
+function mkcd () {
+  mkdir "$1"
+  cd "$1"
+}
+
+# cd into directory and list contents
+function cl () {
+  cd "$1"
+  ll
+}
+
+# Unzip files and remove the __MACOSX folder
+function uzp () {
+  unzip -q "$1"
+  rm -rf __MACOSX
+  ll
+}
+
+# Display folder contents after removing files
+function rml () {
+  rm "$1" "$2"
+  ll
+}
+
+# Repeat any command every second
 function repeat_command() {
   while [ 0 ]
   do "$@"
   sleep 1
   done
+}
+
+# ----------------------
+# Git Functions
+# ----------------------
+
+# Git log find by commit message
+function glf() { git log --all --grep="$1"; }
+
+# Git add local files and display status
+function ga. () {
+  git add .
+  echo -e $gs_message
+  git status
+}
+
+# Git push and display status
+function gps () {
+  git push
+  echo -e $gs_message
+  git status
+}
+
+# Git pull and display status
+function gpl () {
+  git pull
+  echo -e $gs_message
+  git status
+}
+
+# make `g` behave like `git status` with no args, or `git` with args
+function g () {
+  if [ $# -eq 0 ]
+  then
+    echo -e $gs_message
+    git status
+  else
+    git "$@"
+  fi
+}
+# __git_complete g _git
+
+# make a git function to commit and display status
+function gcms () {
+  git commit -m "$1"
+  echo -e $gs_message
+  git status
 }
