@@ -1,0 +1,6 @@
+function repeat_command() {
+  while [ 0 ]
+  do "$@"
+  sleep 1
+  done
+}
