@@ -13,7 +13,7 @@
 	ui = true
 [core]
 	excludesfile = ~/.gitignore
-	editor = atom --wait
+	editor = code --wait
 	pager = /usr/local/bin/smartless
 [push]
 	default = simple

@@ -5,18 +5,19 @@
 ali=/Users/az/.aliases
 alias sl="ls"
 alias ls='colorls --sd'
+alias ll='ls -Al'
+alias ldir="ls -dl .*/ */"
+alias dirs="dirs -v"
 alias irb="pry"
 alias be="bundle exec"
 alias cat="ccat -G Decimal="darkteal"  -G Plaintext="darkgreen""
 alias ber="bundle exec rspec"
 alias u="cd ..;ll"
 alias nd="cd -"
-alias dirs="dirs -v"
 alias atom="atom ."
-alias ali="nano $ali"
+alias code="code ."
+alias ali="vim $ali"
 alias hist="history"
-alias ll='ls -Al'
-alias ldir="ls -dl .*/ */"
 alias clear_history='echo "" > ~/.zsh_history & exec $SHELL -l'
 alias sor="source ~/.zshrc"
 alias spn="spotify next"
@@ -30,7 +31,6 @@ gs_message="\n\033[0;34m╭───────────────── g
 
 #### git shortcuts ####
 alias gpom="git push origin master"
-alias gcom="git commit -m"
 alias gds="git dif --staged"
 alias gd="git status;git diff"
 alias grao="git remote add origin"
