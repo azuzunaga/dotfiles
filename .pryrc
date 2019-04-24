@@ -10,11 +10,11 @@ end
 # Change prompt color (helps with identifying env)
 Pry.config.prompt = [
                     proc { |target_self, nest_level, pry|
-                      "\e[0;30m\e[42m[#{pry.input_array.size}] #{pry.config.prompt_name}(#{Pry.view_clip(target_self)})#{":#{nest_level}" unless nest_level.zero?}>\e[0m\e[0m "
+                      "\e[0;30m\e[42m[#{pry.input_ring.size}] #{pry.config.prompt_name}(#{Pry.view_clip(target_self)})#{":#{nest_level}" unless nest_level.zero?}>\e[0m\e[0m "
                     },
 
                     proc { |target_self, nest_level, pry|
-                      "\e[0;30m\e[42m[[#{pry.input_array.size}] #{pry.config.prompt_name}(#{Pry.view_clip(target_self)})#{":#{nest_level}" unless nest_level.zero?}*\e[0m\e[0m "
+                      "\e[0;30m\e[42m[[#{pry.input_ring.size}] #{pry.config.prompt_name}(#{Pry.view_clip(target_self)})#{":#{nest_level}" unless nest_level.zero?}*\e[0m\e[0m "
                     }
                    ]
 

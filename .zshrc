@@ -21,7 +21,7 @@ HYPHEN_INSENSITIVE="true"
 
 # Which plugins would you like to load?
 plugins=(
-  git osx zsh-autosuggestions zsh-syntax-highlighting
+  git osx zsh-autosuggestions zsh-syntax-highlighting history
 )
 
 #### powerlevel9k ####
@@ -37,7 +37,7 @@ POWERLEVEL9K_VIRTUALENV_FOREGROUND='237'
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=0
 POWERLEVEL9K_MODE='nerdfont-complete'
-POWERLEVEL9K_SHORTEN_DIR_LENGTH=4
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(history context virtualenv dir_writable dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time time)
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%F{blue}\u256D\u2500%F{white}"
@@ -60,9 +60,9 @@ source $HOME/.functions
 # iterm2 integration
 source ~/.iterm2_shell_integration.zsh
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-
 # Add NVM to PATH
 export NVM_DIR=~/.nvm
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+# initialize rbenv
+eval "$(rbenv init -)"
