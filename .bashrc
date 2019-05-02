@@ -8,9 +8,6 @@ source "$HOME/.git-prompt.sh"
 # look for commands in these places
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 
-# make vim the default text editor
-export EDITOR="nano"
-
 # shortened prompt that includes git branch info
 RED='\[\e[0;31m\]'
 WHITE='\[\e[1;37m\]'
@@ -30,6 +27,9 @@ export NVM_DIR="$HOME/.nvm"
 
 # load aliases
 [[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
+
+# Functions
+[[ -f "$HOME/.functions" ]] && source "$HOME/.functions"
 
 # load any local configuration
 [[ -f "$HOME/.bashrc.local" ]] && source "$HOME/.bashrc.local"
