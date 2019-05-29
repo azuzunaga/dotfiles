@@ -27,7 +27,7 @@ Note: All code blocks should be run on the terminal.
 2. Install `zsh`
 
 ```bash
-brew install zsh zsh-completions
+brew install zsh
 ```
 
 3. Install iterm2:
@@ -40,8 +40,16 @@ brew install zsh zsh-completions
 
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
 ```
+
+    4.1. Download modifications
+
+    ```bash
+    cd ~/.oh-my-zsh
+    git remote add fork https://github.com/azuzunaga/oh-my-zsh.git
+    git pull remote
+    git push -u fork master
+    ```
 
 5. Install the Powerlevel9k theme
 
@@ -74,13 +82,19 @@ brew install coreutils
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
-10. Install prompt syntax highlighting
+10. Install `zsh-completions`
+
+```bash
+  git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
+```
+
+11. Install prompt syntax highlighting
 
 ```bash
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
-9. Fork and clone this repo (`https://github.com/azuzunaga/dotfiles`).
+12. Fork and clone this repo (`https://github.com/azuzunaga/dotfiles`).
 
 - Optional, but recommended: Create a `~/Programming` directory and place the `dotfiles` repo there, so that the end path of the repo is `~/Programming/dotfiles`. This guide assumes this structure, but feel free to change the commands to match your actual `dotfiles` path.
 

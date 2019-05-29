@@ -21,8 +21,11 @@ HYPHEN_INSENSITIVE="true"
 
 # Which plugins would you like to load?
 plugins=(
-  git osx zsh-autosuggestions zsh-syntax-highlighting history
+  git osx zsh-autosuggestions zsh-syntax-highlighting history zsh-completions
 )
+
+# Reload completions (for zsh-completions)
+autoload -U compinit && compinit
 
 #### powerlevel9k ####
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND='009'

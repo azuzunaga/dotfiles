@@ -45,4 +45,3 @@ watchman
 webp
 xz
 zsh
-zsh-completions
