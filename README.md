@@ -24,10 +24,10 @@ Note: All code blocks should be run on the terminal.
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-2. Install `zsh`
+2. Install brew packages
 
 ```bash
-brew install zsh
+./brew.sh
 ```
 
 3. Install iterm2:
@@ -57,82 +57,44 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 ```
 
-6. Install `ccat` (color cat)
-
-```bash
-brew install ccat
-```
-
-7. Install `smartless`
+6. Install `smartless`
 
 ```bash
 curl https://raw.githubusercontent.com/stefanheule/smartless/master/smartless -o /usr/local/bin/smartless
 chmod +x /usr/local/bin/smartless # <-- mark it as executable
 ```
 
-8. Install `coreutils`
-
-```bash
-brew install coreutils
-```
-
-9. Install `zsh-autosuggestions`
+7. Install `zsh-autosuggestions`
 
 ```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
-10. Install `zsh-completions`
+8. Install `zsh-completions`
 
 ```bash
   git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
 ```
 
-11. Install prompt syntax highlighting
+9. Install prompt syntax highlighting
 
 ```bash
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
-12. Fork and clone this repo (`https://github.com/azuzunaga/dotfiles`).
+10. Fork and clone this repo (`https://github.com/azuzunaga/dotfiles`).
 
 - Optional, but recommended: Create a `~/Programming` directory and place the `dotfiles` repo there, so that the end path of the repo is `~/Programming/dotfiles`. This guide assumes this structure, but feel free to change the commands to match your actual `dotfiles` path.
 
 #### Other downloads
 
-- imgcat:
-
-  ```bash
-  brew tap eddieantonio/eddieantonio
-  brew install imgcat
-  ```
-
-- tree
-
-  ```bash
-  brew install tree
-  ```
-
-- tldr
-
-  ```bash
-  brew install tldr
-  ```
-
 - cheat.sh
 
-  ```bash
-  brew install rlwrap
-  mkdir ~/bin #if you don't already have a bin dir in your source dir
-  curl https://cht.sh/:cht.sh > ~/bin/cht.sh
-  chmod +x ~/bin/cht.sh
-  ```
-
-- fzf
-
 ```bash
-brew install fzf
-/usr/local/opt/fzf/install
+brew install rlwrap
+mkdir ~/bin #if you don't already have a bin dir in your source dir
+curl https://cht.sh/:cht.sh > ~/bin/cht.sh
+chmod +x ~/bin/cht.sh
 ```
 
 ### Setting up the configuration files
@@ -193,3 +155,7 @@ Next, mission control:
 And finally, hot corners:
 
 ![Hot corners](https://github.com/azuzunaga/dotfiles/blob/master/images/settings_hot_corners)
+
+## Thanks to...
+
+[Mathias Bynens](https://mathiasbynens.be/) and his [dotfiles repository](https://github.com/mathiasbynens/dotfiles)
