@@ -80,12 +80,21 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
   defaults write com.apple.AppleMultitouchTrackpad TrackpadRotate -bool true
 
   # Swipe left or right with three fingers between full-screen apps
+<<<<<<< HEAD
   defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerHorizSwipeGesture -int 2
   defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerHorizSwipeGesture -int 2
 
   # Swipe left from right edge with two fingers to open Notification Center
   defaults write com.apple.AppleMultitouchTrackpad TrackpadTwoFingerFromRightEdgeSwipeGesture -int 3
   defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadTwoFingerFromRightEdgeSwipeGesture -int 3
+=======
+  defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerHorizSwipeGesture -int 3
+  defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerHorizSwipeGesture -int 3
+
+  # Swipe left from right edge with two fingers to open Notification Center
+  defaults write com.apple.AppleMultitouchTrackpad TrackpadTwoFingerFromRightEdgeSwipeGesture -int 2
+  defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadTwoFingerFromRightEdgeSwipeGesture -int 2
+>>>>>>> 84d30a0cdb553c07e7146b30a46c1aef25318cdc
 
   # Enable trackpad gesture (see Dock section for details)
   defaults write com.apple.AppleMultitouchTrackpad TrackpadFiveFingerPinchGesture -int 2
@@ -107,7 +116,11 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
   # Set a blazingly fast keyboard repeat rate
   defaults write NSGlobalDomain KeyRepeat -int 1
+<<<<<<< HEAD
   defaults write NSGlobalDomain InitialKeyRepeat -int 15
+=======
+  defaults write NSGlobalDomain InitialKeyRepeat -int 9
+>>>>>>> 84d30a0cdb553c07e7146b30a46c1aef25318cdc
 
   # Set language and text formats
   # Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with
