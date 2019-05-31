@@ -6,6 +6,13 @@ export PATH=$HOME/bin:/usr/local/opt:$PATH
 
 # look for commands in these places
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
+
+# Replace BSD utils with GNU utils
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+export PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
+export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
+
 export TERM="xterm-256color"
 export PAGER=smartless
 
@@ -63,11 +70,16 @@ source $HOME/.functions
 # iterm2 integration
 source ~/.iterm2_shell_integration.zsh
 
+# Initialize fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # Add NVM to PATH
 export NVM_DIR=~/.nvm
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
-# initialize rbenv
+# Initialize rbenv
 eval "$(rbenv init -)"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# Initialize pyenv and pyenv-virtualenv
+eval "$(pyenv init -)"
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi

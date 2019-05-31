@@ -8,6 +8,12 @@ source "$HOME/.git-prompt.sh"
 # look for commands in these places
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 
+# Replace BSD utils with GNU utils
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+export PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
+export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
+
 # shortened prompt that includes git branch info
 RED='\[\e[0;31m\]'
 WHITE='\[\e[1;37m\]'
