@@ -50,54 +50,58 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
   # Disable “natural” (Lion-style) scrolling
   defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
-  # Set mouse tracking speed
-  defaults write com.apple.mouse.scaling -int 2
-  defaults write com.apple.trackpad.scaling -int 2
+  ################## TODO: Verify these settings work ##################
 
-  # Set mouse scrolling speed
-  defaults write com.apple.scrollwheel.scaling -float 0.3125
-  defaults write com.apple.trackpad.scrolling -float 0.3125
+    # Set mouse tracking speed
+    defaults write com.apple.mouse.scaling -int 2
+    defaults write com.apple.trackpad.scaling -int 2
 
-  # Double-tap on mouse to zoom
-  defaults write com.apple.AppleMultitouchMouse MouseOneFingerDoubleTapGesture -int 1
+    # Set mouse scrolling speed
+    defaults write com.apple.scrollwheel.scaling -float 0.3125
+    defaults write com.apple.trackpad.scrolling -float 0.3125
 
-  # Double-tap on mouse for Mission Control
-  defaults write com.apple.AppleMultitouchMouse MouseTwoFingerDoubleTapGesture -int 3
+    # Double-tap on mouse to zoom
+    defaults write com.apple.AppleMultitouchMouse MouseOneFingerDoubleTapGesture -int 1
 
-  # Swipe left or right with two fingers between full-screen apps
-  defaults write com.apple.AppleMultitouchMouse MouseTwoFingerHorizSwipeGesture -int 2
+    # Double-tap on mouse for Mission Control
+    defaults write com.apple.AppleMultitouchMouse MouseTwoFingerDoubleTapGesture -int 3
 
-  # Click or tap with two fingers on trackpad for secondary click
-  defaults write com.apple.AppleMultitouchTrackpad TrackpadRightClick -bool true
+    # Swipe left or right with two fingers between full-screen apps
+    defaults write com.apple.AppleMultitouchMouse MouseTwoFingerHorizSwipeGesture -int 2
 
-  # Pinch to zoom with trackpad
-  defaults write com.apple.AppleMultitouchTrackpad TrackpadPinch -bool true
+    # Click or tap with two fingers on trackpad for secondary click
+    defaults write com.apple.AppleMultitouchTrackpad TrackpadRightClick -bool true
 
-  # Double-tap on tracktap with two fingers to smart zoom
-  defaults write com.apple.AppleMultitouchTrackpad TrackpadTwoFingerDoubleTapGesture -bool true
+    # Pinch to zoom with trackpad
+    defaults write com.apple.AppleMultitouchTrackpad TrackpadPinch -bool true
 
-  # Rotate with two fingers on trackpad
-  defaults write com.apple.AppleMultitouchTrackpad TrackpadRotate -bool true
+    # Double-tap on tracktap with two fingers to smart zoom
+    defaults write com.apple.AppleMultitouchTrackpad TrackpadTwoFingerDoubleTapGesture -bool true
 
-  # Swipe left or right with three fingers between full-screen apps
-  defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerHorizSwipeGesture -int 2
-  defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerHorizSwipeGesture -int 2
+    # Rotate with two fingers on trackpad
+    defaults write com.apple.AppleMultitouchTrackpad TrackpadRotate -bool true
 
-  # Swipe left from right edge with two fingers to open Notification Center
-  defaults write com.apple.AppleMultitouchTrackpad TrackpadTwoFingerFromRightEdgeSwipeGesture -int 3
-  defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadTwoFingerFromRightEdgeSwipeGesture -int 3
+    # Swipe left or right with three fingers between full-screen apps
+    defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerHorizSwipeGesture -int 2
+    defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerHorizSwipeGesture -int 2
 
-  # Enable trackpad gesture (see Dock section for details)
-  defaults write com.apple.AppleMultitouchTrackpad TrackpadFiveFingerPinchGesture -int 2
-  defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerHorizSwipeGesture -int 2
-  defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerPinchGesture -int 2
-  defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerVertSwipeGesture -int 2
-  defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerVertSwipeGesture -int 2
-  defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFiveFingerPinchGesture -int 2
-  defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFourFingerHorizSwipeGesture -int 2
-  defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFourFingerPinchGesture -int 2
-  defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFourFingerVertSwipeGesture -int 2
-  defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerVertSwipeGesture -int 2
+    # Swipe left from right edge with two fingers to open Notification Center
+    defaults write com.apple.AppleMultitouchTrackpad TrackpadTwoFingerFromRightEdgeSwipeGesture -int 3
+    defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadTwoFingerFromRightEdgeSwipeGesture -int 3
+
+    # Enable trackpad gesture (see Dock section for details)
+    defaults write com.apple.AppleMultitouchTrackpad TrackpadFiveFingerPinchGesture -int 2
+    defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerHorizSwipeGesture -int 2
+    defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerPinchGesture -int 2
+    defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerVertSwipeGesture -int 2
+    defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerVertSwipeGesture -int 2
+    defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFiveFingerPinchGesture -int 2
+    defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFourFingerHorizSwipeGesture -int 2
+    defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFourFingerPinchGesture -int 2
+    defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFourFingerVertSwipeGesture -int 2
+    defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerVertSwipeGesture -int 2
+
+  ############################## END TODO ##############################
 
   # Increase sound quality for Bluetooth headphones/headsets
   defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
@@ -208,18 +212,6 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
   # Don't automatically hide and show the Dock
   defaults write com.apple.dock autohide -bool false
-
-  # Enable trackpad App Expose gesture
-  defaults write com.apple.dock showAppExposeGestureEnabled -bool true
-
-  # Enable trackpad Show Desktop gesture
-  defaults write com.apple.dock showDesktopGestureEnabled -bool true
-
-  # Enable Launchpad gesture
-  defaults write com.apple.dock showLaunchpadGestureEnabled -bool true
-
-  # Enable trackpad mission control gesture
-  defaults write com.apple.dock showMissionControlGestureEnabled -bool true
 
   # Displays have separate Spaces
   defaults write com.apple.spaces spans-displays -bool true
