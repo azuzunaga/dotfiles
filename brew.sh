@@ -23,13 +23,15 @@ brew install findutils
 # Install GNU `sed`.
 brew install gnu-sed
 
-# Install `wget`
-brew install wget
-
 # Install more recent versions of some macOS tools.
 brew install grep
 brew install openssh
 brew install screen
+
+# Install xQuartz (allows GUI through ssh)
+# Don't forget to allow X forwarding in /etc/ssh/sshd_config
+# Add the line X11Forwarding yes
+brew cask install xquartz
 
 # Install imgcat
 brew tap eddieantonio/eddieantonio
