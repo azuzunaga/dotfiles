@@ -83,3 +83,6 @@ eval "$(rbenv init -)"
 # Initialize pyenv and pyenv-virtualenv
 eval "$(pyenv init -)"
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+
+# Set up direnv
+eval "$(direnv hook zsh)"
