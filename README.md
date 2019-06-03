@@ -56,7 +56,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 ```bash
 cd ~/.oh-my-zsh
 git remote add fork https://github.com/azuzunaga/oh-my-zsh.git
-git pull remote
+git pull fork master
 git push -u fork master
 ```
 
