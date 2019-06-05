@@ -126,6 +126,8 @@ Here are the locations where the files should end up:
 First, create a directory called Programming and clone this repo into it:
 
 ```bash
+mkdir ~/Programming
+cd ~/Programming
 git clone https://github.com/azuzunaga/dotfiles.git
 ```
 
