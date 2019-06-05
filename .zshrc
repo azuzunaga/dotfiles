@@ -16,6 +16,9 @@ export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
 export TERM="xterm-256color"
 export PAGER=smartless
 
+# Disable magic functions
+DISABLE_MAGIC_FUNCTIONS=true
+
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/$USER/.oh-my-zsh
 
@@ -28,7 +31,7 @@ HYPHEN_INSENSITIVE="true"
 
 # Which plugins would you like to load?
 plugins=(
-  git osx zsh-autosuggestions zsh-syntax-highlighting history zsh-completions
+  git osx zsh-autosuggestions history zsh-completions zsh-syntax-highlighting
 )
 
 # Reload completions (for zsh-completions)

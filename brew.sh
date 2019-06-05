@@ -55,5 +55,9 @@ brew install tree
 brew install xz # pyenv needs xz
 brew install zsh
 
+# Install fira code font (for font ligatures)
+brew tap caskroom/fonts
+brew cask install font-fira-code
+
 # Remove outdated versions from the cellar.
 brew cleanup
