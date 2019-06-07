@@ -45,4 +45,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # Nix config
-if [ -e /Users/joseph/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/joseph/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+if [ -e /Users/americozuzunaga/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/americozuzunaga/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

@@ -35,3 +35,7 @@ alias gd="git status;git diff"
 alias grao="git remote add origin"
 alias gld='git log --pretty=format:"%h %ad %s" --date=short --all'
 alias gs='git status --short'
+
+#### Daily Kos Aliases ####
+alias rerails="kill -TERM %1; wait; bundle exec foreman start &"
+alias rereact="kill -TERM %1; wait; bin/start &"
