@@ -73,8 +73,10 @@ source $HOME/.functions
 # iterm2 integration
 source ~/.iterm2_shell_integration.zsh
 
-# Initialize fzf
+# Initialize and configure fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='fd --type f'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 # Add NVM to PATH
 export NVM_DIR=~/.nvm
