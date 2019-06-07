@@ -24,6 +24,8 @@ alias spp="spotify pause"
 alias diff="diff --color"
 # Make LESS display file contents inline if page size is only one screen
 alias less="/usr/local/bin/smartless"
+alias find="fd"
+alias grep="rg"
 
 #### git variables ####
 gs_message="\n\033[0;34m╭───────────────── git status ─────────────────╮\033[0m\n"

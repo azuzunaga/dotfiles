@@ -42,6 +42,7 @@ brew install ack
 brew install git
 brew install git-lfs
 brew install ccat
+brew install fd
 brew install fzf
 brew install git
 brew install graphviz
@@ -50,10 +51,15 @@ brew install ngrep
 brew install pyenv
 brew install pyenv-virtualenv
 brew install rbenv
+brew install ripgrep
 brew install tldr
 brew install tree
 brew install xz # pyenv needs xz
 brew install zsh
+
+# Install fira code font (for font ligatures)
+brew tap caskroom/fonts
+brew cask install font-fira-code
 
 # Remove outdated versions from the cellar.
 brew cleanup
