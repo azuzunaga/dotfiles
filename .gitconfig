@@ -19,7 +19,7 @@
 	default = simple
 [user]
 	name = Americo
-	email = ame.zuz@gmail.com
+	email = americo.zuzunaga@dailykos.com
 [credential]
 	helper = osxkeychain
 [filter "lfs"]
