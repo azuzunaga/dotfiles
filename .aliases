@@ -23,7 +23,7 @@ alias spv="spotify prev"
 alias spp="spotify pause"
 alias diff="diff --color"
 # Make LESS display file contents inline if page size is only one screen
-alias less="/usr/local/bin/smartless"
+alias less="/usr/local/bin/smartless -N"
 alias find="fd"
 alias grep="rg"
 
