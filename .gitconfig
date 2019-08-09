@@ -20,6 +20,7 @@
 [user]
 	name = Americo
 	email = ame.zuz@gmail.com
+	signingkey = 20B4E0C72E63AE99
 [credential]
 	helper = osxkeychain
 [filter "lfs"]
@@ -27,3 +28,5 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
+[commit]
+	gpgsign = true
