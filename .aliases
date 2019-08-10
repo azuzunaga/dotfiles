@@ -10,9 +10,9 @@ alias ldir="ls -dl .*/ */"
 alias dirs="dirs -v"
 alias irb="pry"
 alias be="bundle exec"
-alias cat="ccat -G Decimal="darkteal"  -G Plaintext="darkgreen""
+alias cat="ccat -G Decimal="darkteal" -G Plaintext="darkgreen""
 alias ber="bundle exec rspec"
-alias u="cd ..;ll"
+alias u="cd ..; ll"
 alias nd="cd -"
 alias ali="vim $ali"
 alias hist="history"
@@ -32,9 +32,6 @@ alias chromedev="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome 
 gs_message="\n\033[0;34m╭───────────────── git status ─────────────────╮\033[0m\n"
 
 #### git shortcuts ####
-alias gpom="git push origin master"
-alias gds="git dif --staged"
-alias gd="git status;git diff"
+alias gds="git diff --staged"
 alias grao="git remote add origin"
-alias gld='git log --pretty=format:"%h %ad %s" --date=short --all'
 alias gs='git status --short'
