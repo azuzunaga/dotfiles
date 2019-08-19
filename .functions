@@ -35,6 +35,18 @@ function repeat_command() {
   done
 }
 
+# DK Specific - Kill rails or react server
+function ks() {
+  case "${1}" in
+    rails)
+      lsof -ti :8000 -ti :8081 -ti :3000 | xargs kill
+      ;;
+    react)
+      lsof -ti :4000 | xargs kill
+      ;;
+  esac
+}
+
 # ----------------------
 # Git Functions
 # ----------------------
