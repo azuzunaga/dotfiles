@@ -40,4 +40,8 @@ alias gs='git status --short'
 
 #### Daily Kos Aliases ####
 alias rereact="kill -TERM %1; wait; bin/start &"
-alias puma="bundle exec rails s puma -b 192.168.33.1 -p 3000 -c config.ru -e ${RAILS_ENV:-development}"
+alias railspuma="bundle exec rails s puma -b 192.168.33.1 -p 3000 -c config.ru -e ${RAILS_ENV:-development}"
+alias dkserv='railspuma &; ln -sf log logs && nginx -c $PWD/config/vm/nginx.dev.conf -p $PWD &'
+alias chromedev="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --user-data-dir=/tmp/chrome-debug &"
+
+
