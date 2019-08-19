@@ -83,7 +83,7 @@ export NVM_DIR=~/.nvm
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 # Initialize rbenv
-eval "$(rbenv init -)"
+#eval "$(rbenv init -)"
 
 # Initialize pyenv and pyenv-virtualenv
 eval "$(pyenv init -)"
