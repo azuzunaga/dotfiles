@@ -35,3 +35,5 @@ gs_message="\n\033[0;34m╭───────────────── g
 alias gds="git diff --staged"
 alias grao="git remote add origin"
 alias gs='git status --short'
+alias glgn="git log --stat -n 1"
+alias glgpn="git log --stat -p -n 1"
