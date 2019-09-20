@@ -25,7 +25,7 @@ alias diff="diff --color"
 # Make LESS display file contents inline if page size is only one screen
 alias less="/usr/local/bin/smartless -N"
 alias find="fd"
-alias grep="rg"
+alias grep="rg -S"
 alias chromedev="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --user-data-dir=/tmp/chrome-debug &"
 
 #### git variables ####
@@ -40,6 +40,8 @@ alias gs='git status --short'
 alias rereact="kill -TERM %1; wait; bin/start &"
 alias railspuma="bundle exec rails s puma -b 192.168.33.1 -p 3000 -c config.ru -e ${RAILS_ENV:-development}"
 alias dkserv='railspuma &; ln -sf log logs && nginx -c $PWD/config/vm/nginx.dev.conf -p $PWD &'
+alias lcserv="REACT_APP_ENV=local bin/start &"
 alias chromedev="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --user-data-dir=/tmp/chrome-debug &"
-
+alias lc-deploy-staging="REACT_APP_ENV=production bin/build && AWS_DEFAULT_REGION=us-east-1 script/deploy staging"
+alias lc-deploy-prod="REACT_APP_ENV=production bin/build && AWS_DEFAULT_REGION=us-west-2 script/deploy production"
 
