@@ -10,3 +10,4 @@
 
 source "$HOME/.bashrc"
 
+if [ -e /Users/americozuzunaga/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/americozuzunaga/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

@@ -25,7 +25,7 @@ export PS1="$CYAN[\#] $CYAN\W$WHITE\$(__git_ps1)$CYAN\$$RESET "
 ### other ###
 
 # initialize rbenv
-eval "$(rbenv init -)"
+#eval "$(rbenv init -)"
 
 # initialize node version manager
 export NVM_DIR="$HOME/.nvm"
