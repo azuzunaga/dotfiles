@@ -64,6 +64,9 @@ POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 ### User configuration ###
 source $ZSH/oh-my-zsh.sh
 
+# Configure dircolors
+eval $(dircolors $HOME/Programming/dotfiles/.dircolors)
+
 # Aliases
 source $HOME/.aliases
 
