@@ -88,3 +88,12 @@ eval "$(rbenv init -)"
 # Initialize pyenv and pyenv-virtualenv
 eval "$(pyenv init -)"
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+
+# Nix
+if [ -e /Users/$USER/.nix-profile/etc/profile.d/nix.sh ]; then 
+  . /Users/$USER/.nix-profile/etc/profile.d/nix.sh 
+fi # added by Nix installer
+
+# Set up direnv
+declare SRCDIR="${HOME}/src"
+eval "$(direnv hook zsh)"
