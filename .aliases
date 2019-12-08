@@ -27,6 +27,7 @@ alias less="/usr/local/bin/smartless -N"
 alias find="fd"
 alias grep="rg -S"
 alias chromedev="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --user-data-dir=/tmp/chrome-debug &"
+alias tree="tree -a --dirsfirst"
 
 #### git variables ####
 gs_message="\n\033[0;34m╭───────────────── git status ─────────────────╮\033[0m\n"
