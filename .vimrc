@@ -5,3 +5,5 @@ map <ScrollWheelDown> j
 map <ScrollWheelUp> k
 map <ScrollWheelLeft> h
 map <ScrollWheelRight> l
+syntax on
+colo delek
