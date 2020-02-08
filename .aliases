@@ -27,7 +27,7 @@ alias less="/usr/local/bin/smartless -N"
 alias find="fd"
 alias grep="rg -S"
 alias chromedev="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --user-data-dir=/tmp/chrome-debug &"
-alias tree="tree -a --dirsfirst"
+alias tree="tree -a --dirsfirst -I 'node_modules|dist*|public|.git|.direnv.d|build'"
 alias creative-coding-start="cd $HOME/Programming/frontend-masters-courses; creative-coding/node_modules/canvas-sketch-cli/src/index.js --open creative-coding --output creative-coding/saved-images &"
 
 #### git variables ####
