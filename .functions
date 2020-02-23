@@ -35,6 +35,13 @@ function repeat_command() {
   done
 }
 
+# Launch Creative Coding server with a specific files
+function creative-coding-start() {
+  cd $HOME/Programming/frontend-masters-courses/creative-coding
+  ./node_modules/canvas-sketch-cli/src/index.js --open "$1" --output ./saved-images &
+  cd ..
+}
+
 # ----------------------
 # Git Functions
 # ----------------------
