@@ -28,7 +28,7 @@ alias find="fd"
 alias grep="rg -S"
 alias chromedev="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --user-data-dir=/tmp/chrome-debug &"
 alias tree="tree -a --dirsfirst -I 'node_modules|dist*|public|.git|.direnv.d|build'"
-alias fix-audio="sudo kill coreaudiod"
+alias fix-audio="pgrep coreaudiod | xargs sudo kill"
 
 #### git variables ####
 gs_message="\n\033[0;34m╭───────────────── git status ─────────────────╮\033[0m\n"
