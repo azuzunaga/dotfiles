@@ -2107,12 +2107,16 @@ Marks and Annotations.Next Mark or Annotation</string>
 			</dict>
 			<key>Ansi 8 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.33333333333333331</real>
+				<real>0.7803921568627451</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.33333333333333331</real>
+				<real>0.7803921568627451</real>
 				<key>Red Component</key>
-				<real>0.33333333333333331</real>
+				<real>0.7803921568627451</real>
 			</dict>
 			<key>Ansi 9 Color</key>
 			<dict>
@@ -2176,12 +2180,16 @@ Marks and Annotations.Next Mark or Annotation</string>
 			<string>/Users/az/.nix-profile/bin/zsh -l</string>
 			<key>Cursor Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.73333334922790527</real>
+				<real>0.0</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.73333334922790527</real>
+				<real>1</real>
 				<key>Red Component</key>
-				<real>0.73333334922790527</real>
+				<real>0.27058823529411763</real>
 			</dict>
 			<key>Cursor Guide Color</key>
 			<dict>
@@ -2198,12 +2206,16 @@ Marks and Annotations.Next Mark or Annotation</string>
 			</dict>
 			<key>Cursor Text Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>1</real>
+				<real>0.0</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>1</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>1</real>
+				<real>0.0</real>
 			</dict>
 			<key>Custom Command</key>
 			<string>Yes</string>
