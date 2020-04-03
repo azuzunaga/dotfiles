@@ -1951,7 +1951,7 @@ Marks and Annotations.Next Mark or Annotation</string>
 	<key>NSWindow Frame com.apple.typography_panel_KnackNerdFontC-Regular</key>
 	<string>1786 354 260 96 1440 -180 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 400 1440 478 0 0 1440 877 </string>
+	<string>0 525 1440 353 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>176 65 910 482 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -3092,12 +3092,16 @@ Marks and Annotations.Next Mark or Annotation</string>
 			</dict>
 			<key>Ansi 8 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.33333333333333331</real>
+				<real>0.7803921568627451</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.33333333333333331</real>
+				<real>0.7803921568627451</real>
 				<key>Red Component</key>
-				<real>0.33333333333333331</real>
+				<real>0.7803921568627451</real>
 			</dict>
 			<key>Ansi 9 Color</key>
 			<dict>
@@ -3924,12 +3928,16 @@ Marks and Annotations.Next Mark or Annotation</string>
 			</dict>
 			<key>Ansi 8 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.33333333333333331</real>
+				<real>0.7803921568627451</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.33333333333333331</real>
+				<real>0.7803921568627451</real>
 				<key>Red Component</key>
-				<real>0.33333333333333331</real>
+				<real>0.7803921568627451</real>
 			</dict>
 			<key>Ansi 9 Color</key>
 			<dict>
@@ -4366,6 +4374,10 @@ Marks and Annotations.Next Mark or Annotation</string>
 		<string>3.3.7</string>
 		<string>3.3.3</string>
 	</array>
+	<key>NoSyncBFPRecents</key>
+	<array>
+		<string>Menlo</string>
+	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
 	<key>NoSyncConfirmShellIntegrationCommand</key>
@@ -4383,9 +4395,9 @@ Marks and Annotations.Next Mark or Annotation</string>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1440, 900}}</string>
+		<string>{{1440, -180}, {1920, 1080}}</string>
 		<key>topLeft</key>
-		<string>{241, 736}</string>
+		<string>{2023, 578}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -4400,11 +4412,11 @@ Marks and Annotations.Next Mark or Annotation</string>
 	<key>NoSyncLastTipTime</key>
 	<real>550158074.44061601</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>40</integer>
+	<integer>44</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>588028681.39659202</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
@@ -5229,7 +5241,7 @@ Marks and Annotations.Next Mark or Annotation</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-03-30T00:00:42Z</date>
+	<date>2020-04-04T01:00:09Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
