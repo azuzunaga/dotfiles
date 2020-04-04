@@ -3,7 +3,6 @@
 #### General Shortcuts ####
 
 ali=/Users/az/.aliases
-alias sl="ls"
 alias ls='colorls --sd'
 alias ll='ls -Al'
 alias ldir="ls -dl .*/ */"
@@ -14,7 +13,6 @@ alias cat="ccat -G Decimal="darkteal" -G Plaintext="darkgreen""
 alias ber="bundle exec rspec"
 alias u="cd ..; ll"
 alias nd="cd -"
-alias ali="vim $ali"
 alias hist="history"
 alias clear_history='echo "" > ~/.zsh_history & exec $SHELL -l'
 alias sor="source ~/.zshrc"
