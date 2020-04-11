@@ -14,13 +14,6 @@ function cl () {
   ll
 }
 
-# Unzip files and remove the __MACOSX folder
-function uzp () {
-  unzip -q "$1"
-  rm -rf __MACOSX
-  ll
-}
-
 # Display folder contents after removing files
 function rml () {
   rm "$1" "$2"
