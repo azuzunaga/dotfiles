@@ -49,13 +49,6 @@ function ga. () {
   git status
 }
 
-# Git push and display status
-function gps () {
-  git push
-  echo -e $gs_message
-  git status
-}
-
 # Git pull and display status
 function gpl () {
   git pull
