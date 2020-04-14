@@ -49,13 +49,6 @@ function ga. () {
   git status
 }
 
-# Git pull and display status
-function gpl () {
-  git pull
-  echo -e $gs_message
-  git status
-}
-
 # make `g` behave like `git status` with no args, or `git` with args
 function g () {
   if [ $# -eq 0 ]
