@@ -14,12 +14,6 @@ function cl () {
   ll
 }
 
-# Display folder contents after removing files
-function rml () {
-  rm "$1" "$2"
-  ll
-}
-
 # Repeat any command every second
 function repeat_command() {
   while [ 0 ]
