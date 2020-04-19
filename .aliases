@@ -25,7 +25,7 @@ alias less="/usr/local/bin/smartless -N"
 alias find="fd"
 alias grep="rg -S"
 alias chromedev="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --user-data-dir=/tmp/chrome-debug &"
-alias tree="tree -a --dirsfirst -I 'node_modules|dist*|public|.git|.direnv.d|build'"
+alias tree="tree -a --dirsfirst -I 'node_modules|dist*|public|.git|.direnv.d|build' -L 2"
 alias fix-audio="pgrep coreaudiod | xargs sudo kill"
 alias npm="pnpm"
 
