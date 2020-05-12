@@ -72,10 +72,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/azuzunaga/oh-my-zsh/master
 git pull upstream master
 ```
 
-3. Install the Powerlevel9k theme
+3. Install the Powerlevel10k theme
 
 ```bash
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
 4. Install `zsh-autosuggestions`
