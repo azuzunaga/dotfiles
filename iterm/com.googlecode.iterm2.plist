@@ -2229,6 +2229,8 @@ Marks and Annotations.Next Mark or Annotation</string>
 			<false/>
 			<key>Disable Window Resizing</key>
 			<true/>
+			<key>Draw Powerline Glyphs</key>
+			<true/>
 			<key>Flashing Bell</key>
 			<false/>
 			<key>Foreground Color</key>
@@ -2245,7 +2247,7 @@ Marks and Annotations.Next Mark or Annotation</string>
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
-			<real>0.90000000000000002</real>
+			<real>1</real>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Jobs to Ignore</key>
@@ -2693,7 +2695,7 @@ Marks and Annotations.Next Mark or Annotation</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>DroidSansMonoNerdFontC- 15</string>
+			<string>MesloLGS-NF-Regular 15</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<true/>
 			<key>Option Key Sends</key>
@@ -2941,7 +2943,7 @@ Marks and Annotations.Next Mark or Annotation</string>
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
-			<true/>
+			<false/>
 			<key>Vertical Spacing</key>
 			<real>1</real>
 			<key>Visual Bell</key>
@@ -3222,6 +3224,8 @@ Marks and Annotations.Next Mark or Annotation</string>
 			<false/>
 			<key>Disable Window Resizing</key>
 			<true/>
+			<key>Draw Powerline Glyphs</key>
+			<true/>
 			<key>Flashing Bell</key>
 			<false/>
 			<key>Foreground Color</key>
@@ -3240,7 +3244,7 @@ Marks and Annotations.Next Mark or Annotation</string>
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
-			<real>0.90000000000000002</real>
+			<real>1</real>
 			<key>HotKey Activated By Modifier</key>
 			<true/>
 			<key>HotKey Alternate Shortcuts</key>
@@ -3712,7 +3716,7 @@ Marks and Annotations.Next Mark or Annotation</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>DroidSansMonoNerdFontCompleteM- 15</string>
+			<string>MesloLGS-NF-Regular 15</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<true/>
 			<key>Option Key Sends</key>
@@ -3789,7 +3793,7 @@ Marks and Annotations.Next Mark or Annotation</string>
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
-			<true/>
+			<false/>
 			<key>Vertical Spacing</key>
 			<real>1</real>
 			<key>Visual Bell</key>
@@ -4068,6 +4072,8 @@ Marks and Annotations.Next Mark or Annotation</string>
 			<false/>
 			<key>Disable Window Resizing</key>
 			<true/>
+			<key>Draw Powerline Glyphs</key>
+			<true/>
 			<key>Flashing Bell</key>
 			<false/>
 			<key>Foreground Color</key>
@@ -4084,7 +4090,7 @@ Marks and Annotations.Next Mark or Annotation</string>
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
-			<real>0.90000000000000002</real>
+			<real>1</real>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
@@ -4303,7 +4309,7 @@ Marks and Annotations.Next Mark or Annotation</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>DroidSansMonoNerdFontC- 15</string>
+			<string>MesloLGS-NF-Regular 15</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<true/>
 			<key>Option Key Sends</key>
@@ -4382,7 +4388,7 @@ Marks and Annotations.Next Mark or Annotation</string>
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
-			<true/>
+			<false/>
 			<key>Vertical Spacing</key>
 			<real>1</real>
 			<key>Visual Bell</key>
@@ -4404,7 +4410,9 @@ Marks and Annotations.Next Mark or Annotation</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
-		<string>Menlo</string>
+		<string>DroidSansMono Nerd Font</string>
+		<string>DroidSansMono Nerd Font Mono</string>
+		<string>MesloLGS NF</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -4440,7 +4448,7 @@ Marks and Annotations.Next Mark or Annotation</string>
 	<key>NoSyncLastTipTime</key>
 	<real>550158074.44061601</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>50</integer>
+	<integer>51</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -5269,7 +5277,7 @@ Marks and Annotations.Next Mark or Annotation</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-05-06T01:00:08Z</date>
+	<date>2020-05-12T19:44:55Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
