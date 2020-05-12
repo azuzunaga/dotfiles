@@ -134,15 +134,6 @@ typeset -g POWERLEVEL9K_DIR_HYPERLINK=false
 # POWERLEVEL9K_DIR_CLASSES below.
 typeset -g POWERLEVEL9K_DIR_SHOW_WRITABLE=v2
 
-# Transient prompt works similarly to the builtin transient_rprompt option. It trims down prompt
-# when accepting a command line. Supported values:
-#
-#   - off:      Don't change prompt when accepting a command line.
-#   - always:   Trim down prompt when accepting a command line.
-#   - same-dir: Trim down prompt when accepting a command line unless this is the first command
-#               typed after changing current working directory.
-typeset -g POWERLEVEL9K_TRANSIENT_PROMPT=always
-
 # Instant prompt mode.
 #
 #   - off:     Disable instant prompt. Choose this if you've tried instant prompt and found
@@ -184,8 +175,8 @@ eval "$(pyenv init -)"
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
 # Nix
-if [ -e /Users/$USER/.nix-profile/etc/profile.d/nix.sh ]; then 
-  . /Users/$USER/.nix-profile/etc/profile.d/nix.sh 
+if [ -e /Users/$USER/.nix-profile/etc/profile.d/nix.sh ]; then
+  . /Users/$USER/.nix-profile/etc/profile.d/nix.sh
 fi # added by Nix installer
 
 # Set up direnv
