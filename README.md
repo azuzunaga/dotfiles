@@ -52,12 +52,6 @@ curl https://raw.githubusercontent.com/stefanheule/smartless/master/smartless -o
 chmod +x /usr/local/bin/smartless # <-- mark it as executable
 ```
 
-5. Install `colorls`
-
-```bash
-gem install colorls
-```
-
 ### Terminal Customizations
 
 1. Install `oh-my-zsh`:
