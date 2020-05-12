@@ -55,11 +55,16 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(history context virtualenv dir_writable dir v
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time time)
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%F{blue}\u256D\u2500%F{white}"
 POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%F{blue}\u2570\u0024%F{white} "
+POWERLEVEL9K_TIME_BACKGROUND='151'
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+
+################################# VCS #################################
 POWERLEVEL9K_VCS_CLEAN_FOREGROUND='237'
 POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='237'
 POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='237'
-POWERLEVEL9K_TIME_BACKGROUND='151'
-POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+POWERLEVEL9K_SHOW_CHANGESET=true
+POWERLEVEL9K_VCS_SHORTEN_MIN_LENGTH=60
+POWERLEVEL9K_VCS_SHORTEN_STRATEGY=truncate_middle
 
 ##################################[ dir: current directory ]##################################
 # Current directory background color.
@@ -75,7 +80,7 @@ typeset -g POWERLEVEL9K_SHORTEN_DELIMITER=
 typeset -g POWERLEVEL9K_DIR_SHORTENED_FOREGROUND=250
 # Color of the anchor directory segments. Anchor segments are never shortened. The first
 # segment is always an anchor.
-typeset -g POWERLEVEL9K_DIR_ANCHOR_FOREGROUND=255
+# typeset -g POWERLEVEL9K_DIR_ANCHOR_FOREGROUND=255
 # Display anchor directory segments in bold.
 typeset -g POWERLEVEL9K_DIR_ANCHOR_BOLD=true
 # Don't shorten directories that contain any of these files. They are anchors.
