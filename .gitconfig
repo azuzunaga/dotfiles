@@ -13,7 +13,7 @@
 	ui = true
 [core]
 	excludesfile = ~/.gitignore
-	editor = code --wait
+	editor = vim
 	pager = /usr/local/bin/smartless
 [push]
 	default = simple
