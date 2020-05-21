@@ -20,7 +20,7 @@ export PAGER=smartless
 DISABLE_MAGIC_FUNCTIONS=true
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/$USER/.oh-my-zsh
+export ZSH=/home/$USER/.oh-my-zsh
 
 # Set name of the theme to load.
 ZSH_THEME=powerlevel10k/powerlevel10k
@@ -161,30 +161,11 @@ source $HOME/.aliases
 # Functions
 source $HOME/.functions
 
-# iterm2 integration
-source ~/.iterm2_shell_integration.zsh
-
 # Initialize and configure fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='fd --type f'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
-# Add NVM to PATH
-export NVM_DIR=~/.nvm
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-
 # Initialize rbenv
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
 
-# Initialize pyenv and pyenv-virtualenv
-eval "$(pyenv init -)"
-if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
-
-# Nix
-if [ -e /Users/$USER/.nix-profile/etc/profile.d/nix.sh ]; then
-  . /Users/$USER/.nix-profile/etc/profile.d/nix.sh
-fi # added by Nix installer
-
-# Set up direnv
-declare SRCDIR="${HOME}/src"
-eval "$(direnv hook zsh)"

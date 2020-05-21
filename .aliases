@@ -3,7 +3,7 @@
 #### General Shortcuts ####
 
 ali=/Users/az/.aliases
-alias ls='colorls --sd'
+alias ls='ls -F -h --color=always -v --author --time-style=long-iso -C "$@" --group-directories-first'
 alias ll='ls -Al'
 alias ldir="ls -dl .*/ */"
 alias dirs="dirs -v"
