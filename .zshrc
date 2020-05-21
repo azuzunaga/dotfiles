@@ -78,7 +78,7 @@ typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_unique
 # Replace removed segment suffixes with this symbol.
 typeset -g POWERLEVEL9K_SHORTEN_DELIMITER=
 # Color of the shortened directory segments.
-typeset -g POWERLEVEL9K_DIR_SHORTENED_FOREGROUND=250
+typeset -g POWERLEVEL9K_DIR_SHORTENED_FOREGROUND=237
 # Color of the anchor directory segments. Anchor segments are never shortened. The first
 # segment is always an anchor.
 # typeset -g POWERLEVEL9K_DIR_ANCHOR_FOREGROUND=255
