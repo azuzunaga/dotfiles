@@ -39,4 +39,4 @@ alias gds="git diff --staged"
 alias grao="git remote add origin"
 alias gs='git status --short'
 alias glo='git log --oneline --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\'
-alias grph="rev-parse --short HEAD"
+alias grph="git rev-parse --short HEAD"
