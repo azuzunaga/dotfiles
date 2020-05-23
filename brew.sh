@@ -24,7 +24,6 @@ brew install findutils
 brew install gnu-sed
 
 # Install more recent versions of some macOS tools.
-brew install grep
 brew install openssh
 brew install screen
 
