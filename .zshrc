@@ -1,5 +1,8 @@
 DEFAULT_USER=$USER
 
+# GPG needs a passphrase
+export GPG_TTY=$(tty)
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/bin:/usr/local/opt:$PATH
@@ -168,4 +171,9 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 # Initialize rbenv
 # eval "$(rbenv init -)"
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+source ~/.iterm2_shell_integration.zsh
 
