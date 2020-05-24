@@ -164,6 +164,9 @@ source $HOME/.functions
 # iterm2 integration
 source ~/.iterm2_shell_integration.zsh
 
+# Configure dircolors
+eval $(dircolors $HOME/Programming/dotfiles/.dircolors)
+
 # Initialize and configure fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='fd --type f'
