@@ -16,6 +16,10 @@ export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
 export TERM="xterm-256color"
 export PAGER=smartless
 
+# Bat configuration
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export BAT_THEME="ansi-dark"
+
 # Disable magic functions
 DISABLE_MAGIC_FUNCTIONS=true
 
@@ -150,7 +154,7 @@ typeset -g POWERLEVEL9K_DIR_SHOW_WRITABLE=v2
 #   - verbose: Enable instant prompt and print a warning when detecting console output during
 #              zsh initialization. Choose this if you've never tried instant prompt, haven't
 #              seen the warning, or if you are unsure what this all means.
-typeset -g POWERLEVEL9K_INSTANT_PROMPT=verbose
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 ### User configuration ###
 source $ZSH/oh-my-zsh.sh
@@ -171,17 +175,6 @@ source ~/.iterm2_shell_integration.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='fd --type f'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-
-# Add NVM to PATH
-export NVM_DIR=~/.nvm
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-
-# Initialize rbenv
-#eval "$(rbenv init -)"
-
-# Initialize pyenv and pyenv-virtualenv
-eval "$(pyenv init -)"
-if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
 # Nix
 if [ -e /Users/$USER/.nix-profile/etc/profile.d/nix.sh ]; then
