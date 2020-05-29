@@ -14,7 +14,7 @@ export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
 
 export TERM="xterm-256color"
-export PAGER=smartless
+export PAGER=less
 
 # Bat configuration
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
