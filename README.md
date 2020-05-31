@@ -45,13 +45,6 @@ Note: All code blocks should be run on the terminal.
  brew cask install iterm2
 ```
 
-4. Install `smartless`
-
-```bash
-curl https://raw.githubusercontent.com/stefanheule/smartless/master/smartless -o /usr/local/bin/smartless
-chmod +x /usr/local/bin/smartless # <-- mark it as executable
-```
-
 ### Terminal Customizations
 
 1. Install `oh-my-zsh`:
