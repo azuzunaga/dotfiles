@@ -53,8 +53,8 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
   ################## TODO: Verify these settings work ##################
 
     # Set mouse tracking speed
-    defaults write com.apple.mouse.scaling -int 2
-    defaults write com.apple.trackpad.scaling -int 2
+    defaults write -g com.apple.mouse.scaling -float 15.0
+    defaults write -g com.apple.trackpad.scaling -float 2.0
 
     # Set mouse scrolling speed
     defaults write com.apple.scrollwheel.scaling -float 0.3125
