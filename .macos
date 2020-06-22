@@ -110,8 +110,8 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
   defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
   # Set a blazingly fast keyboard repeat rate
-  defaults write NSGlobalDomain KeyRepeat -int 1
-  defaults write NSGlobalDomain InitialKeyRepeat -int 15
+  defaults write -g KeyRepeat -int 1
+  defaults write -g InitialKeyRepeat -int 10 
 
   # Set language and text formats
   # Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with
