@@ -35,6 +35,16 @@ function repeat_command() {
   done
 }
 
+# make `c` behave like `code .` with no args, or `code` with args
+function c () {
+  if [ $# -eq 0 ]
+  then
+   code .
+  else
+    code "$@"
+  fi
+}
+
 # ----------------------
 # Git Functions
 # ----------------------
