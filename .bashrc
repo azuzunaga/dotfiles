@@ -1,5 +1,9 @@
-### load extensions ###
+### Nix Package Manager ###
+if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then source $HOME/.nix-profile/etc/profile.d/nix.sh; fi
+if [ -e $HOME/.nix-profile/etc/profile.d/bash_completion.sh ]; then source $HOME/.nix-profile/etc/profile.d/bash_completion.sh; fi
+export XDG_DATA_DIRS="$HOME/.nix-profile/share/:$XDG_DATA_DIRS"
 
+### load extensions ###
 source "$HOME/.git-completion.bash"
 source "$HOME/.git-prompt.sh"
 
@@ -26,10 +30,6 @@ export PS1="$CYAN[\#] $CYAN\W$WHITE\$(__git_ps1)$CYAN\$$RESET "
 
 # initialize rbenv
 eval "$(rbenv init -)"
-
-# initialize node version manager
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
 
 # load aliases
 [[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"

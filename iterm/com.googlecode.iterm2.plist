@@ -1745,14 +1745,14 @@ Marks and Annotations.Next Mark or Annotation</string>
 		<key>0xf702-0x340000</key>
 		<dict>
 			<key>Action</key>
-			<integer>2</integer>
+			<integer>31</integer>
 			<key>Text</key>
 			<string></string>
 		</dict>
 		<key>0xf702-0x380000</key>
 		<dict>
 			<key>Action</key>
-			<integer>31</integer>
+			<integer>2</integer>
 			<key>Text</key>
 			<string></string>
 		</dict>
@@ -1773,14 +1773,14 @@ Marks and Annotations.Next Mark or Annotation</string>
 		<key>0xf703-0x340000</key>
 		<dict>
 			<key>Action</key>
-			<integer>0</integer>
+			<integer>30</integer>
 			<key>Text</key>
 			<string></string>
 		</dict>
 		<key>0xf703-0x380000</key>
 		<dict>
 			<key>Action</key>
-			<integer>30</integer>
+			<integer>0</integer>
 			<key>Text</key>
 			<string></string>
 		</dict>
@@ -1913,7 +1913,7 @@ Marks and Annotations.Next Mark or Annotation</string>
 	dWxs0g0ODxJaTlMub2JqZWN0c1YkY2xhc3OiEBGAAoAKgA3TFA0OFRkdV05TLmtleXOj
 	FhcYgAOABIAFoxobHIAGgAeACIAJWklkZW50aWZpZXJVV2lkdGhWSGlkZGVuUTAjQGjA
 	AAAAAAAI0iUmJyhaJGNsYXNzbmFtZVgkY2xhc3Nlc1xOU0RpY3Rpb25hcnmiJylYTlNP
-	YmplY3TTFA0OKy8doxYXGIADgASABaMwMRyAC4AMgAiACVExI0BzsZ2yLQ5W0iUmNzhe
+	YmplY3TTFA0OKy8doxYXGIADgASABaMwMRyAC4AMgAiACVExI0B0oZ2yLQ5W0iUmNzhe
 	TlNNdXRhYmxlQXJyYXmjNzkpV05TQXJyYXkACAARABoAJAApADIANwBJAEwAUgBUAGMA
 	aQBuAHkAgACDAIUAhwCJAJAAmACcAJ4AoACiAKYAqACqAKwArgC5AL8AxgDIANEA0gDX
 	AOIA6wD4APsBBAELAQ8BEQETARUBGQEbAR0BHwEhASMBLAExAUABRAAAAAAAAAIBAAAA
@@ -1951,7 +1951,7 @@ Marks and Annotations.Next Mark or Annotation</string>
 	<key>NSWindow Frame com.apple.typography_panel_KnackNerdFontC-Regular</key>
 	<string>1786 354 260 96 1440 -180 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 375 1440 503 0 0 1440 877 </string>
+	<string>1440 877 1920 503 1440 -180 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>176 65 910 482 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -4448,7 +4448,7 @@ Marks and Annotations.Next Mark or Annotation</string>
 	<key>NoSyncLastTipTime</key>
 	<real>550158074.44061601</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>52</integer>
+	<integer>67</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -5277,7 +5277,7 @@ Marks and Annotations.Next Mark or Annotation</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-05-23T01:00:08Z</date>
+	<date>2020-06-28T21:31:14Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>

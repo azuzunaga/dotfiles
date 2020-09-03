@@ -176,10 +176,6 @@ eval $(dircolors $HOME/Programming/dotfiles/.dircolors)
 export FZF_DEFAULT_COMMAND='fd --type f'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
-# Add NVM to PATH
-export NVM_DIR=~/.nvm
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-
 # Initialize rbenv
 eval "$(rbenv init -)"
 
