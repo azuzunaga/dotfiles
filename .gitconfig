@@ -13,8 +13,8 @@
 	ui = true
 [core]
 	excludesfile = ~/.gitignore
-	editor = code --wait
-	pager = /usr/local/bin/smartless
+	editor = vim 
+	pager = bat
 	autocrlf = false
 	safecrlf = true
 [push]
@@ -32,3 +32,9 @@
 	process = git-lfs filter-process
 [commit]
 	gpgsign = true
+[rerere]
+	enabled = true
+[protocol]
+	version = 2
+[gpg]
+	program = /usr/local/bin/gpg
