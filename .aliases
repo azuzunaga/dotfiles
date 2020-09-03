@@ -2,7 +2,6 @@
 
 #### General Shortcuts ####
 
-ali=/Users/az/.aliases
 alias sl="ls"
 alias ls='ls -F -h --color=always -v --author --time-style=long-iso -C "$@" --group-directories-first'
 alias ll='ls -Al'
@@ -10,7 +9,6 @@ alias ldir="ls -dl .*/ */"
 alias dirs="dirs -v"
 alias irb="pry"
 alias be="bundle exec"
-alias cat="bat"
 alias ber="bundle exec rspec"
 alias u="cd ..; ll"
 alias nd="cd -"
@@ -23,13 +21,12 @@ alias spp="spotify pause"
 alias diff="diff --color"
 # Make LESS display file contents inline if page size is only one screen
 alias less="less -iNRF"
-alias find="fd -X bat"
-alias grep="rg -S"
+alias fd="fd -X bat"
+alias rg="rg -S"
 alias chromedev="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --user-data-dir=/tmp/chrome-debug &"
 alias tree="tree -a --dirsfirst -I 'node_modules|dist*|public|.git|.direnv.d|build' -L 2"
 alias fix-audio="pgrep coreaudiod | xargs sudo kill"
 alias npm="pnpm"
-alias c.="code ."
 
 #### git variables ####
 gs_message="\n\033[0;34m╭───────────────── git status ─────────────────╮\033[0m\n"
@@ -42,3 +39,5 @@ alias glgn="git log --stat -n 1"
 alias glgpn="git log --stat -p -n 1"
 alias glo='git log --oneline --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\'
 alias grph="git rev-parse --short HEAD"
+alias grph="git rev-parse --short HEAD"
+alias gstau="git stash push -u"
