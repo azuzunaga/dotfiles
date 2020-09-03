@@ -6,8 +6,9 @@ set autoindent
 set smartindent
 set number
 set colorcolumn=80
+set clipboard=unnamed
 
-" Plugins
+"Plugins
 set runtimepath^=~/.vim/bundle/vim-nix
 
 map <ScrollWheelDown> j
