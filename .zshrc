@@ -1,12 +1,5 @@
 DEFAULT_USER=$USER
 
-# If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$HOME/bin:/usr/local/opt:$PATH
-
-# look for commands in these places
-export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
-
 # Replace BSD utils with GNU utils
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
@@ -14,9 +7,9 @@ export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
 
 export TERM="xterm-256color"
-export PAGER=smartless
 
 # Bat configuration
+export PAGER='less'
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export BAT_THEME="ansi-dark"
 
