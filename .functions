@@ -45,6 +45,35 @@ function c () {
   fi
 }
 
+# make 'k' behave like `kill %1` with no args, or `kill %<n>` with args
+function k () {
+  if [ $# -eq 0 ]
+  then
+    kill %1
+  else
+    kill %"$@"
+  fi
+}
+
+# make 'bg' behave like `bg %1` with no args, or `bg %<n>` with args
+function bg () {
+  if [ $# -eq 0 ]
+  then
+    bg %1
+  else
+    bg %"$@"
+  fi
+}
+
+# make 'fg' behave like `fg %1` with no args, or `fg %<n>` with args
+function fg () {
+  if [ $# -eq 0 ]
+  then
+    fg %1
+  else
+    fg %"$@"
+  fi
+}
 
 # ----------------------
 # Git Functions
