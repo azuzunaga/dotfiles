@@ -1,5 +1,9 @@
 DEFAULT_USER=$USER
 
+# Clear to beginning of line rather than the whole line
+bindkey -e
+bindkey \^U backward-kill-line
+
 # Replace BSD utils with GNU utils
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
@@ -11,7 +15,7 @@ export TERM="xterm-256color"
 # Bat configuration
 export PAGER='less'
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-export BAT_THEME="ansi-dark"
+export BAT_THEME="ansi"
 
 # Disable magic functions
 DISABLE_MAGIC_FUNCTIONS=true
@@ -177,3 +181,4 @@ fi # added by Nix installer
 # Set up direnv
 declare SRCDIR="${HOME}/src"
 eval "$(direnv hook zsh)"
+if [ -e /Users/americozuzunaga/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/americozuzunaga/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

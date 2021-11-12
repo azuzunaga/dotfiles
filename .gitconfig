@@ -19,6 +19,7 @@
 	safecrlf = true
 [push]
 	default = simple
+	followTags = true
 [user]
 	name = Americo
 	email = americo.zuzunaga@dailykos.com
@@ -40,3 +41,7 @@
 	program = /usr/local/bin/gpg
 [merge]
 	conflictstyle = diff3
+[pull]
+	ff = only
+[init]
+	defaultBranch = main
