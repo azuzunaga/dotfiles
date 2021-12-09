@@ -32,7 +32,7 @@ HYPHEN_INSENSITIVE="true"
 
 # Which plugins would you like to load?
 plugins=(
-  git osx zsh-autosuggestions history zsh-completions zsh-syntax-highlighting
+  git macos zsh-autosuggestions history zsh-completions zsh-syntax-highlighting
 )
 
 # Reload completions (for zsh-completions)
