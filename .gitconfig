@@ -13,7 +13,7 @@
 	ui = true
 [core]
 	excludesfile = ~/.gitignore
-	editor = vim 
+	editor = vim
 	pager = bat
 	autocrlf = false
 	safecrlf = true
@@ -22,8 +22,8 @@
 	followTags = true
 [user]
 	name = Americo
-	email = americo.zuzunaga@dailykos.com
-	signingkey = C234DC353CA3505B
+	email = <>
+	signingkey = <>
 [credential]
 	helper = osxkeychain
 [filter "lfs"]
