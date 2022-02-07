@@ -3,3 +3,4 @@ apollo.config.js
 .DS_Store
 .psc-ide-port
 .markdownlint.json
+.direnv.d
