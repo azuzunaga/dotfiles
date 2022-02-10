@@ -121,3 +121,21 @@ function gcms () {
   echo -e $gs_message
   git status
 }
+
+# Nix functions
+nixify() {
+  if [ ! -e ./.envrc ]; then
+    echo "use nix --system x86_64-darwin" > .envrc
+  fi
+  if [[ ! -e shell.nix ]] && [[ ! -e default.nix ]]; then
+    cat > shell.nix <<'EOF'
+with import <nixpkgs> {};
+mkShell {
+  nativeBuildInputs = [
+     bashInteractive
+  ];
+}
+EOF
+    ${EDITOR:-vim} shell.nix
+  fi
+}

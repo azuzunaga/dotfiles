@@ -179,6 +179,5 @@ if [ -e /Users/$USER/.nix-profile/etc/profile.d/nix.sh ]; then
 fi # added by Nix installer
 
 # Set up direnv
-declare SRCDIR="${HOME}/src"
+#declare SRCDIR="${HOME}/src"
 eval "$(direnv hook zsh)"
-if [ -e /Users/americozuzunaga/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/americozuzunaga/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
