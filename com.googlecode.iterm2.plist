@@ -14,6 +14,8 @@
 	<true/>
 	<key>Control</key>
 	<integer>1</integer>
+	<key>CopyWithStylesByDefault</key>
+	<true/>
 	<key>Custom Color Presets</key>
 	<dict>
 		<key>.az</key>
