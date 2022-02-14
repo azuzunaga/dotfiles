@@ -156,11 +156,17 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 ### User configuration ###
 source $ZSH/oh-my-zsh.sh
 
+# Nix
+if [ -e /Users/$USER/.nix-profile/etc/profile.d/nix.sh ]; then
+  . /Users/$USER/.nix-profile/etc/profile.d/nix.sh
+fi # added by Nix installer
+
 # Configure dircolors
 eval $(dircolors $HOME/Programming/dotfiles/.dircolors)
 
 # Aliases
 source $HOME/.aliases
+source $HOME/.aliases-work
 
 # Functions
 source $HOME/.functions
@@ -173,11 +179,9 @@ source ~/.iterm2_shell_integration.zsh
 export FZF_DEFAULT_COMMAND='fd --type f'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
-# Nix
-if [ -e /Users/$USER/.nix-profile/etc/profile.d/nix.sh ]; then
-  . /Users/$USER/.nix-profile/etc/profile.d/nix.sh
-fi # added by Nix installer
-
 # Set up direnv
 #declare SRCDIR="${HOME}/src"
 eval "$(direnv hook zsh)"
+
+# nix-darwin
+if test -e /etc/static/bashrc; then . /etc/static/bashrc; fi
