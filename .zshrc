@@ -166,10 +166,13 @@ eval $(dircolors $HOME/Programming/dotfiles/.dircolors)
 
 # Aliases
 source $HOME/.aliases
-source $HOME/.aliases-work
 
 # Functions
 source $HOME/.functions
+
+# Job specific
+[ -f $HOME/.job-specific.sh ] && source $HOME/.job-specific.sh
+[ -f $HOME/.aliases-work.sh ] && source $HOME/.aliases-work.sh
 
 # iterm2 integration
 source ~/.iterm2_shell_integration.zsh

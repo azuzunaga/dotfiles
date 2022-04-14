@@ -4,3 +4,6 @@ apollo.config.js
 .psc-ide-port
 .markdownlint.json
 .direnv.d
+.envrc
+.*-work
+job-specific-files/
