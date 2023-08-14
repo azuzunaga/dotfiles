@@ -1,3 +1,5 @@
+inoremap jk <ESC> " remap esc key to jk
+let mapleader = ";" " change leader key
 set mouse=a
 set expandtab
 set shiftwidth=2
@@ -7,6 +9,13 @@ set smartindent
 set number
 set colorcolumn=80
 set clipboard=unnamed
+set number " show line numbers
+set noswapfile " disable the swapfile
+set hlsearch " highlight all results
+set ignorecase " ignore case in search
+set incsearch " show search results as you type
+set showcmd " show command in bottom bar
+syntax on
 
 "Plugins
 set runtimepath^=~/.vim/bundle/vim-nix
@@ -15,8 +24,6 @@ map <ScrollWheelDown> j
 map <ScrollWheelUp> k
 map <ScrollWheelLeft> h
 map <ScrollWheelRight> l
-syntax on
-colo delek
 
 " code from:
 " http://stackoverflow.com/questions/5585129/pasting-code-into-terminal-window-into-vim-on-mac-os-x
