@@ -9,4 +9,4 @@
 \set HISTFILE ~/.psql_history- :DBNAME
 \set HISTCONTROL ignoredups
 \set COMP_KEYWORD_CASE upper
-\pset format wrapped
+\setenv PAGER 'bat'
