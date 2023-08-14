@@ -75,12 +75,20 @@ function fg () {
   fi
 }
 
+# Watch GitHub PR status
+function watch_pr () {
+  gh pr checks "$@" --watch
+  tput bel
+}
+
 # ----------------------
 # Git Functions
 # ----------------------
 
 # Git log find by commit message
-function glf() { git log --all --grep="$1"; }
+function glf () {
+  git log --all --grep="$1"
+}
 
 # Git add local files and display status
 function ga. () {
@@ -120,6 +128,10 @@ function gcms () {
   git commit -m "$1"
   echo -e $gs_message
   git status
+}
+
+function git-parent () {
+  git show-branch | grep "*" | grep -v "$(git rev-parse --abbrev-ref HEAD)" | head -n1 | sed 's/.*\[\(.*\)\].*/\1/' | sed 's/[\^~].*//'
 }
 
 # Nix functions

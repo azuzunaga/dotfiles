@@ -171,8 +171,7 @@ source $HOME/.aliases
 source $HOME/.functions
 
 # Job specific
-[ -f $HOME/.job-specific.sh ] && source $HOME/.job-specific.sh
-[ -f $HOME/.aliases-work.sh ] && source $HOME/.aliases-work.sh
+[ -f $HOME/.aliases-work ] && source $HOME/.aliases-work
 
 # iterm2 integration
 source ~/.iterm2_shell_integration.zsh
@@ -180,7 +179,16 @@ source ~/.iterm2_shell_integration.zsh
 # Initialize and configure fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='fd --type f'
+export FZF_CTRL_R_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+# CTRL-/ to toggle small preview window to see the full command
+# CTRL-Y to copy the command into clipboard using pbcopy
+export FZF_CTRL_R_OPTS="
+  --preview 'echo {}' --preview-window up:3:hidden:wrap
+  --bind 'ctrl-/:toggle-preview'
+  --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'
+  --color header:italic
+  --header 'Press CTRL-Y to copy command into clipboard'"
 
 # Set up direnv
 #declare SRCDIR="${HOME}/src"
@@ -188,3 +196,14 @@ eval "$(direnv hook zsh)"
 
 # nix-darwin
 if test -e /etc/static/bashrc; then . /etc/static/bashrc; fi
+
+# odbc config
+export ODBCSYSINI=/usr/local/etc
+export ODBCINI=/usr/local/etc/odbc.ini
+
+# Source the Nix environment.
+if [[ -f "$HOME/.nix-profile/etc/profile.d/nix.sh" ]]; then
+    . "$HOME/.nix-profile/etc/profile.d/nix.sh"
+elif [[ -f /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh ]]; then
+    . /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
+fi
