@@ -1676,6 +1676,8 @@
 	<true/>
 	<key>DisableFullscreenTransparency</key>
 	<false/>
+	<key>DisallowCopyEmptyString</key>
+	<true/>
 	<key>EnableAPIServer</key>
 	<true/>
 	<key>EnableDivisionView</key>
@@ -1746,19 +1748,27 @@ Marks and Annotations.Next Mark</string>
 			<key>Text</key>
 			<string></string>
 		</dict>
-		<key>0xf702-0x340000</key>
-		<dict>
-			<key>Action</key>
-			<integer>31</integer>
-			<key>Text</key>
-			<string></string>
-		</dict>
-		<key>0xf702-0x380000</key>
+		<key>0xf702-0x380000-0x7b</key>
 		<dict>
 			<key>Action</key>
 			<integer>2</integer>
+			<key>Label</key>
+			<string></string>
 			<key>Text</key>
 			<string></string>
+			<key>Version</key>
+			<integer>1</integer>
+		</dict>
+		<key>0xf702-0x3a0000-0x7b</key>
+		<dict>
+			<key>Action</key>
+			<integer>31</integer>
+			<key>Label</key>
+			<string></string>
+			<key>Text</key>
+			<string></string>
+			<key>Version</key>
+			<integer>0</integer>
 		</dict>
 		<key>0xf703-0x300000</key>
 		<dict>
@@ -1774,19 +1784,27 @@ Marks and Annotations.Next Mark</string>
 			<key>Text</key>
 			<string></string>
 		</dict>
-		<key>0xf703-0x340000</key>
-		<dict>
-			<key>Action</key>
-			<integer>30</integer>
-			<key>Text</key>
-			<string></string>
-		</dict>
-		<key>0xf703-0x380000</key>
+		<key>0xf703-0x380000-0x7c</key>
 		<dict>
 			<key>Action</key>
 			<integer>0</integer>
+			<key>Label</key>
+			<string></string>
 			<key>Text</key>
 			<string></string>
+			<key>Version</key>
+			<integer>1</integer>
+		</dict>
+		<key>0xf703-0x3a0000-0x7c</key>
+		<dict>
+			<key>Action</key>
+			<integer>30</integer>
+			<key>Label</key>
+			<string></string>
+			<key>Text</key>
+			<string></string>
+			<key>Version</key>
+			<integer>1</integer>
 		</dict>
 		<key>0xf729-0x100000</key>
 		<dict>
@@ -1873,11 +1891,17 @@ Marks and Annotations.Next Mark</string>
 	<integer>7</integer>
 	<key>LeftOption</key>
 	<integer>2</integer>
+	<key>Mark Alert Action</key>
+	<string>Post Notification</string>
 	<key>MaxVertically</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_59B6AF87-569C-4123-9E4F-59C83A692186</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_59B6AF87-569C-4123-9E4F-59C83A692186_selection</key>
+	<integer>0</integer>
+	<key>NeverWarnAboutShortLivedSessions_B79D3276-57A0-40D4-826F-11297A58CDBB</key>
+	<true/>
+	<key>NeverWarnAboutShortLivedSessions_B79D3276-57A0-40D4-826F-11297A58CDBB_selection</key>
 	<integer>0</integer>
 	<key>New Bookmarks</key>
 	<array>
@@ -2051,7 +2075,7 @@ Marks and Annotations.Next Mark</string>
 			<key>Application Keypad Allowed</key>
 			<false/>
 			<key>BM Growl</key>
-			<false/>
+			<true/>
 			<key>Background Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -2155,7 +2179,7 @@ Marks and Annotations.Next Mark</string>
 			<key>Draw Powerline Glyphs</key>
 			<true/>
 			<key>Flashing Bell</key>
-			<false/>
+			<true/>
 			<key>Foreground Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -2638,7 +2662,7 @@ Marks and Annotations.Next Mark</string>
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
-			<integer>25000</integer>
+			<integer>0</integer>
 			<key>Scrollback in Alternate Screen</key>
 			<true/>
 			<key>Selected Text Color</key>
@@ -2668,12 +2692,18 @@ Marks and Annotations.Next Mark</string>
 				<key>action</key>
 				<string>editor</string>
 				<key>editor</key>
-				<string>com.github.atom</string>
+				<string>com.microsoft.VSCode</string>
 				<key>text</key>
 				<string></string>
 			</dict>
+			<key>Send Bell Alert</key>
+			<true/>
 			<key>Send Code When Idle</key>
 			<false/>
+			<key>Send Session Ended Alert</key>
+			<true/>
+			<key>Send Terminal Generated Alerts</key>
+			<true/>
 			<key>Shortcut</key>
 			<string></string>
 			<key>Show Mark Indicators</key>
@@ -2820,7 +2850,7 @@ Marks and Annotations.Next Mark</string>
 			<key>Transparency</key>
 			<real>0.27000000000000002</real>
 			<key>Unlimited Scrollback</key>
-			<false/>
+			<true/>
 			<key>Use Bold Font</key>
 			<true/>
 			<key>Use Bright Bold</key>
@@ -3012,7 +3042,7 @@ Marks and Annotations.Next Mark</string>
 			<key>Application Keypad Allowed</key>
 			<false/>
 			<key>BM Growl</key>
-			<false/>
+			<true/>
 			<key>Background Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -3120,7 +3150,7 @@ Marks and Annotations.Next Mark</string>
 			<key>Draw Powerline Glyphs</key>
 			<true/>
 			<key>Flashing Bell</key>
-			<false/>
+			<true/>
 			<key>Foreground Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -3149,7 +3179,7 @@ Marks and Annotations.Next Mark</string>
 			<key>HotKey Key Code</key>
 			<integer>0</integer>
 			<key>HotKey Modifier Activation</key>
-			<integer>0</integer>
+			<integer>3</integer>
 			<key>HotKey Modifier Flags</key>
 			<integer>0</integer>
 			<key>HotKey Window Animates</key>
@@ -3653,12 +3683,20 @@ Marks and Annotations.Next Mark</string>
 				<key>action</key>
 				<string>editor</string>
 				<key>editor</key>
-				<string>com.github.atom</string>
+				<string>com.microsoft.VSCode</string>
 				<key>text</key>
 				<string></string>
 			</dict>
+			<key>Send Bell Alert</key>
+			<true/>
 			<key>Send Code When Idle</key>
 			<false/>
+			<key>Send Idle Alert</key>
+			<false/>
+			<key>Send New Output Alert</key>
+			<false/>
+			<key>Send Session Ended Alert</key>
+			<true/>
 			<key>Shortcut</key>
 			<string></string>
 			<key>Show Status Bar</key>
@@ -3869,7 +3907,7 @@ Marks and Annotations.Next Mark</string>
 			<key>Transparency</key>
 			<real>0.27000000000000002</real>
 			<key>Unlimited Scrollback</key>
-			<false/>
+			<true/>
 			<key>Use Bold Font</key>
 			<true/>
 			<key>Use Bright Bold</key>
@@ -4059,7 +4097,7 @@ Marks and Annotations.Next Mark</string>
 			<key>Application Keypad Allowed</key>
 			<false/>
 			<key>BM Growl</key>
-			<false/>
+			<true/>
 			<key>Background Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -4163,7 +4201,7 @@ Marks and Annotations.Next Mark</string>
 			<key>Draw Powerline Glyphs</key>
 			<true/>
 			<key>Flashing Bell</key>
-			<false/>
+			<true/>
 			<key>Foreground Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -4413,7 +4451,7 @@ Marks and Annotations.Next Mark</string>
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
-			<integer>25000</integer>
+			<integer>0</integer>
 			<key>Scrollback in Alternate Screen</key>
 			<true/>
 			<key>Selected Text Color</key>
@@ -4439,7 +4477,7 @@ Marks and Annotations.Next Mark</string>
 				<key>action</key>
 				<string>editor</string>
 				<key>editor</key>
-				<string>com.github.atom</string>
+				<string>com.microsoft.VSCode</string>
 				<key>text</key>
 				<string></string>
 			</dict>
@@ -4464,7 +4502,7 @@ Marks and Annotations.Next Mark</string>
 			<key>Transparency</key>
 			<real>0.27000000000000002</real>
 			<key>Unlimited Scrollback</key>
-			<false/>
+			<true/>
 			<key>Use Bold Font</key>
 			<true/>
 			<key>Use Bright Bold</key>
@@ -4512,7 +4550,7 @@ Marks and Annotations.Next Mark</string>
 	<key>QuitWhenAllWindowsClosed</key>
 	<false/>
 	<key>Selection Respects Soft Boundaries</key>
-	<false/>
+	<true/>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
@@ -4545,10 +4583,10 @@ Marks and Annotations.Next Mark</string>
 	<integer>0</integer>
 	<key>ToolbeltTools</key>
 	<array>
-		<string>Recent Directories</string>
-		<string>Command History</string>
 		<string>Paste History</string>
 	</array>
+	<key>TrimWhitespaceOnCopy</key>
+	<true/>
 	<key>UIElementRequiresHotkeys</key>
 	<true/>
 	<key>UseBorder</key>
